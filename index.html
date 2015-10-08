@@ -1,12 +1,632 @@
-<html>
-<title>BioMAssiv.es</title>
-<body>
+<?php
+// For PHP 5 and up
+$handle = fopen("gooquote.txt", "r");
+$usd_cedi = stream_get_contents($handle);
+fclose($handle);
+?><html DOCTYPE=html5>
+<head>
+<title>eaglemoneyflow</title>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+<style>
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+body {
+  margin: 0;
+  padding: 0;
+  background: #e6e6e6 url('Untitled09000009.png') repeat;
+  font-family: Quicksand, sans-serif;
+}
 
-<h2>B I O M A S S I V E S</h2>
+img.center {
+    display: block;
+    margin: 0 auto;
+}
 
-<pre>
+#eagleflow {
+  background: #fff;
+  position: relative;
+  margin: 5% auto;
+  width: 100%;
+  max-width: 920px;
+  overflow: hidden;
+  box-shadow: 0 0 0 20px rgba(0,0,0,0.03);
+}
 
-services: 
+#header {
+  height: 421px;
+  margin: 0;
+  background: #fdfdfd;
+  align:center;
+}
 
- Outdoors - berm and swale design and optimal placement for water retention 
-          - native plant and mycological seeding of berms and swales 
+#header h1 {
+  display: table;
+  color: #999;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  padding: 50px 50px 0 50px;
+  font-size: 55px;
+}
+
+#header p {
+  display: table;
+  color: #999;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#menuwrap {
+  float: left;
+  background: #fff;
+  width: 100%;
+  position: relative;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  height: 60px;
+}
+
+#menu span {
+  display: table;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+#menu:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 80px;
+  margin: 0;
+  text-align: center;
+  background: #444;
+}
+
+#menu:after {
+  position: absolute;
+  content: '\f19c';
+  display: inline-block;
+  font-family: FontAwesome;
+  left: 0;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 80px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+#content {
+  position: relative;
+  width: 100%;
+  height: 1850px;
+  margin: 0;
+  background: #fff;
+  padding: 20px 0;
+}
+
+#main {
+  position: relative;
+  float: left;
+  width: 70%;
+  background: #fff;
+}
+
+#boxbase {
+  position: relative;
+  width: 50%;
+  height: 250px;
+  display: block;
+  background: #f6f6f6;
+  margin: 0 20px 20px 20px;
+}
+
+#boxbase2 {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  display: block;
+  background: #f6f6f6;
+  margin: 0 20px 20px 20px;
+}
+
+#box {
+  position: relative;
+  width: 93.5%;
+  height: 150px;
+  display: block;
+  background: #f6f6f6;
+  margin: 0 20px 20px 20px;
+}
+
+#box:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  left: 0;
+  top: 0;
+  height: 150px;
+  width: 200px;
+  margin: 0;
+  background: #e6e6e6;
+}
+
+#box:after {
+  position: absolute;
+  content: '\f24e';
+  font-family: FontAwesome;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  width: 200px;
+  margin: 0;
+  color: #bbb;
+  font-size: 80px;
+}
+
+#side {
+  background: #fff;
+  width: 30%;
+  float: right;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#sidecontent2a {
+  width: 255px;
+  height: 200px;
+  margin: 0 20px 20px auto;
+  background: #fff;
+  position: relative;
+}
+
+#sidecontent2a span {
+  display: table;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+#sidecontent2 {
+  width: 255px;
+  height: 200px;
+  margin: 0 20px 20px auto;
+  background: #999;
+  position: relative;
+}
+
+#sidecontent2 span {
+  display: table;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+#footer {
+  height: 200px;
+  clear: both;
+  background: #444;
+}
+
+#credits {
+  height: 60px;
+  margin: 0;
+  background: #fff;
+}
+
+#credit span {
+  display: table;
+  color: #999;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+  margin: auto;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+#menu.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+/* Back to top */
+
+.back-to-top {
+  visibility: hidden;
+  background-color: #444;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 48px;
+  position: fixed;
+  bottom: 65px;
+  right: 35px;
+  z-index: 90;
+  cursor: pointer;
+  border-radius: 1px;
+  opacity: 0;
+  -webkit-transform: translateZ(0);
+  transition: all .6s
+}
+
+.back-to-top .fa {
+  font-size: 18px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.back-to-top:hover {
+  background-color: #fc4f3f;
+  opacity: 1
+}
+
+.back-to-top.show {
+  visibility: visible;
+  bottom: 35px;
+  opacity: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  max-width: 920px;
+  height: 60px;
+  margin: auto;
+  background: #f0f0f0;
+  z-index: 99;
+
+background: #cedbe9; /* Old browsers */
+background: -moz-linear-gradient(left, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#cedbe9), color-stop(17%,#aac5de), color-stop(50%,#6199c7), color-stop(59%,#419ad6), color-stop(71%,#4bb8f0), color-stop(84%,#3a8bc2), color-stop(100%,#26558b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* IE10+ */
+background: linear-gradient(to right, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 ); /* IE6-9 */
+}
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    width:100px;
+    display:block;
+}
+.text {
+    position: absolute;
+    top: 0;
+    color:#f00;
+    background-color:rgba(255,255,255,0.7);
+    width: 300px;
+    height: 391px;
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.text:hover {
+    opacity:1;
+}
+
+img {
+    z-index:1;
+}
+span.text
+{
+  width: 300px;
+  height: 150px;
+  color: #f00;
+  text-align: center;
+  line-height: 391px; /* Magic Trick to align text " vertically " */
+}
+
+.myButtonLink {
+        float: left;
+	display: block;
+	width: 160px;
+	height: 123px;
+	//background: url('Untitled000000.png') bottom;
+	background: url('Untitled990009000009.png') bottom;
+	text-indent: -99999px;
+}
+
+.myButtonLink:hover {
+	background-position: 0 0;
+}
+
+.speech-bubble {
+  position: relative;
+  background-color: #292929;
+  width: 200px;
+  height: 150px;
+  line-height: 150px; /* vertically center */
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+}
+ 
+.speech-bubble-top:after {
+  border-bottom-color: #292929;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -15px;   
+}
+.speech-bubble-right:after {
+  border-left-color: #292929;
+  left: 100%;
+  top: 50%;
+  margin-top: -15px;    
+}
+ 
+.speech-bubble-bottom:after {
+  border-top-color: #292929;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;   
+}
+ 
+.speech-bubble-left:after {
+  border-right-color: #292929;
+  top: 50%;
+  right: 100%;
+  margin-top: -15px;    
+}
+
+
+
+
+</style>
+
+
+</head>
+<body ng-app="formExample">
+<div id="eagleflow">
+  <div id="header">
+   
+<div align=left><?php echo date("F j, Y"); ?></div>
+
+
+<div id="boxbase2">
+
+<a class="myButtonLink" href="#LinkURL">eaglebird placeholder</a>
+
+<div ng-controller="ExampleController">
+
+
+    <h1>eagle<b style="color:#0e8744">money</b>flow</h1>
+<form name="form" class="css-form" novalidate>
+    <p>Send $<input type="text" ng-model="user.amt" size=5 name="uAmt" required="" /> to <input type="radio" ng-model="user.currency" value="Ghana" />Ghana, <input type="radio" ng-model="user.currency" value="Nigeria" />Nigeria, or <input type="radio" ng-model="user.currency" value="Kenya" />Kenya</p>
+<table><tr><td  valign=top>
+    
+<!--
+    Sender Name:
+    <input type="text" ng-model="user.name" name="uName" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.uName.$touched">
+      <div ng-show="form.uName.$error.required">Tell us your name.</div>
+    </div>
+
+     E-mail:
+    <input type="email" ng-model="user.email" name="uEmail" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.uEmail.$touched">
+      <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
+      <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+    </div>
+
+ </div>
+</td><td>
+    Recipient Name:
+    <input type="text" ng-model="user.rname" name="urName" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.urName.$touched">
+      <div ng-show="form.urName.$error.required">Name of Recipient.</div>
+    </div>
+     Phone:
+    <input type="text" ng-model="user.rphone" name="urPhone" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.urPhone.$touched">
+      <span ng-show="form.urPhone.$error.required">Please share recipient phone.</span>
+      <span ng-show="form.urPhone.$error.phone">This is not a valid number.</span>
+    </div>
+
+  <pre>user = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>
+-->
+</td><td valign=top>
+    
+    <br />
+    <input type="checkbox" ng-model="user.agree" name="userAgree" required="" />
+
+    I agree:
+    <input ng-show="user.agree" type="text" ng-model="user.agreeSign" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.userAgree.$touched">
+      <div ng-show="!user.agree || !user.agreeSign">Please agree and sign.</div>
+    </div>
+
+    <input type="button" ng-click="reset(form)" value="Reset" />
+    <input type="submit" ng-click="update(user)" value="Save" />
+</td></tr></table>
+
+  </form>
+</div>
+
+
+
+</div>
+  <div id="menuwrap">
+    <div id="menu"><span>Secure service, we don't store your personal data</span></div>
+  </div>
+  <div id="content">
+    <div id="main">
+    
+
+
+
+      <div id="box"> <span class="text"></span></div>
+  <div id="box"><a href="#" class="wrapper"> Send money fast
+    <span class="text">
+        Read More!
+    </span>
+    <!img src="eagle00.png">
+</a></div>
+      <div id="box">
+<! Save money with the Best rates available.></div>
+
+<p><! pk_live_ILZFGYvcrsryiO2v4SZ16rjZ >
+<form action="https://emf1.herokuapp.com/" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_LGbGlLT26cMmfkAjE1g36gVr"
+        data-name="Eagle Money Flow"
+        data-description="Kickoff Payment"
+        data-amount="10000"
+    ></script>
+    <input name="amount" value="10000" type="hidden">
+    <input name="description" value="Kickoff Payment" type="hidden">
+    <input name="metadata" value="{ product_id: 'sku_004' }" type="hidden">
+</form>
+</p>
+
+      <div id="box"><! Secure service, we don't store your numbers></div>
+      <div id="box"><! Friendly, courteous 24 hr transaction assistance></div>
+      <div id="box"><! Today we can move faster, share more, be more connected.></div>
+      <div id="box"></div>
+      <div id="box"></div>
+      <div id="box"></div>
+      <div id="box"></div>
+      <div id="box"></div>
+    </div>
+    <div id="side">
+      <div id="sidecontent2a" class="cf" style="margin:5px;align:center;">
+<div class="speech-bubble speech-bubble-bottom"><span><i class="fa fa-quote-left fa-1x fa-pull-left" ng-controller="ExampleController" style="margin:5px;"> <?php echo $usd_cedi." Cedi/$"; ?></i> <i class="fa fa-quote-right fa-1x fa-pull-left" ng-controller="ExampleController" style="margin:5px;"></i></span></div></div>
+      <div id="sidecontent2" class="cf"><span>Reliable & Timely</span></div>
+      <div id="sidecontent2a" class="cf" style="margin:5px;"><div class="speech-bubble speech-bubble-left">
+<b>
+Life is good!
+<BR>~<BR>
+Leo Nzuri
+</b>
+
+</div></div>
+      <div id="sidecontent2" class="cf"><span>Best Rates</span></div>
+      <div id="sidecontent2" class="cf"><span>Secure and Trusted</span></div>
+      <div id="sidecontent2" class="cf"><span>No Fees</span></div>
+    </div>
+  </div>
+  <div id="footer" class="cf"></div>
+  <div id="credits"><span>&copy 2015 Biomassives Ltd. and Knel ent.</span></div>
+</div>
+
+<div class='back-to-top' id='back-to-top' title='Back to top'><i class='fa fa-chevron-up' /></div>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+  <script>(function(angular) {
+  'use strict';
+angular.module('formExample', [])
+  .controller('ExampleController', ['$scope', function($scope) {
+    $scope.master = {};
+
+    $scope.update = function(user) {
+      $scope.master = angular.copy(user);
+    };
+
+    $scope.reset = function(form) {
+      if (form) {
+        form.$setPristine();
+        form.$setUntouched();
+      }
+      $scope.user = angular.copy($scope.master);
+    };
+
+    $scope.reset();
+  }]);
+})(window.angular);</script>
+
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+$(function() {
+  var top = $('#menu').offset().top - parseFloat($('#menu').css('marginTop').replace(/auto/, 0));
+  var footTop = $('#footer').offset().top - parseFloat($('#footer').css('marginTop').replace(/auto/, 0));
+
+  var maxY = footTop - $('#menu').outerHeight();
+
+  $(window).scroll(function(evt) {
+    var y = $(this).scrollTop();
+    if (y > top) {
+      if (y < maxY) {
+        $('#menu').addClass('fixed').removeAttr('style');
+      } else {
+        $('#menu').removeClass('fixed').css({
+          position: 'absolute',
+          top: (maxY - top) + 'px'
+        });
+      }
+    } else {
+      $('#menu').removeClass('fixed');
+    }
+  });
+});
+
+// Back to top button
+(function() {
+  $(document).ready(function() {
+    return $(window).scroll(function() {
+      return $(window).scrollTop() > 200 ? $("#back-to-top").addClass("show") : $("#back-to-top").removeClass("show")
+    }), $("#back-to-top").click(function() {
+      return $("html,body").animate({
+        scrollTop: "0"
+      })
+    })
+  })
+}).call(this);
+
+</script>
+
+
+</body>
+</html>
