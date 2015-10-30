@@ -1,627 +1,327 @@
-<html DOCTYPE=html5>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Eagle Money Flow</title>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
-<style>
-@import url(//fonts.googleapis.com/css?family=Quicksand);
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Biomassives Web and App Production and Maintenance Services">
+	<meta name="author" content="Biomassives Group Ltd.">
+	
+	<title>Biomassives Web and App Production and Maintenance Services</title> 
+        
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/themes/becobot/assets/css/becobot.css">
+	<!link rel="stylesheet" href="/themes/becobot/assets/css/owl.carousel.css">
+     
+        <link rel="icon" type="image/png" href="/favicon-32x32.png?v=qA5P3Jr0Yv" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png?v=qA5P3Jr0Yv" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png?v=qA5P3Jr0Yv" sizes="16x16">
+        <link rel="manifest" href="/manifest.json?v=qA5P3Jr0Yv">
+        <link rel="shortcut icon" href="/favicon.ico?v=qA5P3Jr0Yv">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=qA5P3Jr0Yv">
+        <meta name="theme-color" content="#ffffff">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+        <style>
+        .lead {
+         align:center;
+         background: #331A00;
+         border-radius: 10px 10px 10px 10px;
+         overflow:hidden;
+         padding:30px;
+         margin: 20 auto;
+         opacity: 0.8; 
+         filter: alpha(opacity=80); /* For IE8 and earlier *
+         }
+    .orange {
+         align:center;
+         background: #D65C33;
+         border-radius: 10px 10px 10px 10px;
+         overflow:hidden;
+         margin: 30 auto;
+         opacity: 0.8; 
+         filter: alpha(opacity=80); /* For IE8 and earlier *
+         }
+
+
+
 body {
-  margin: 0;
-  padding: 0;
-  background: #e6e6e6 url('enM.png') repeat;
-  font-family: Quicksand, sans-serif;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
-
-img.center {
-    display: block;
-    margin: 0 auto;
-}
-
-#eagleflow {
-  background: #fff;
-  position: relative;
-  margin: 5% auto;
+.footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  max-width: 920px;
-  overflow: hidden;
-  box-shadow: 0 0 0 20px rgba(0,0,0,0.03);
-}
-
-#header {
-  height: 421px;
-  margin: 0;
-  background: #fdfdfd;
-  align:center;
-}
-
-#header h1 {
-  display: table;
-  color: #999;
-  font-weight: 400;
-  text-align: center;
-  margin: auto;
-  padding: 50px 50px 0 50px;
-  font-size: 55px;
-}
-
-#header p {
-  display: table;
-  color: #999;
-  font-weight: 400;
-  text-align: center;
-  margin: auto;
-  padding: 10px;
-  font-size: 20px;
-}
-
-#menuwrap {
-  float: left;
-  background: #fff;
-  width: 100%;
-  position: relative;
-  margin: 0 auto 20px auto;
-  padding: 0;
+  /* Set the fixed height of the footer here */
   height: 60px;
-}
-
-#menu span {
-  display: table;
-  color: #fff;
-  text-align: center;
-  margin: auto;
-  padding: 20px 0;
-  font-size: 20px;
-}
-
-#menu:before {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  left: 0;
-  top: 0;
-  height: 60px;
-  width: 80px;
-  margin: 0;
-  text-align: center;
-  background: #444;
-}
-
-#menu:after {
-  position: absolute;
-  content: '\f19c';
-  display: inline-block;
-  font-family: FontAwesome;
-  left: 0;
-  top: 0;
-  height: 60px;
-  line-height: 60px;
-  width: 80px;
-  margin: 0;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-}
-
-#content {
-  position: relative;
-  width: 100%;
-  height: 1850px;
-  margin: 0;
-  background: #fff;
-  padding: 20px 0;
-}
-
-#main {
-  position: relative;
-  float: left;
-  width: 70%;
-  background: #fff;
-}
-
-#boxbase {
-  position: relative;
-  width: 50%;
-  height: 250px;
-  display: block;
-  background: #f6f6f6;
-  margin: 0 20px 20px 20px;
-}
-
-#boxbase2 {
-  position: relative;
-  width: 90%;
-  height: 250px;
-  display: block;
-  background: #f6f6f6;
-  margin: 0 20px 20px 20px;
-}
-
-#box {
-  position: relative;
-  width: 93.5%;
-  height: 150px;
-  display: block;
-  background: #f6f6f6;
-  margin: 0 20px 20px 20px;
-}
-
-#box:before {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  left: 0;
-  top: 0;
-  height: 150px;
-  width: 200px;
-  margin: 0;
-  background: #e6e6e6;
-}
-
-#box:after {
-  position: absolute;
-  content: '\f24e';
-  font-family: FontAwesome;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  top: 0;
-  text-align: center;
-  height: 150px;
-  line-height: 150px;
-  width: 200px;
-  margin: 0;
-  color: #bbb;
-  font-size: 80px;
-}
-
-#side {
-  background: #fff;
-  width: 30%;
-  float: right;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-#sidecontent2a {
-  width: 255px;
-  height: 200px;
-  margin: 0 20px 20px auto;
-  background: #fff;
-  position: relative;
-}
-
-#sidecontent2a span {
-  display: table;
-  color: #fff;
-  text-align: center;
-  margin: auto;
-  padding: 20px 0;
-  font-size: 25px;
-}
-
-#sidecontent2 {
-  width: 255px;
-  height: 200px;
-  margin: 0 20px 20px auto;
-  background: #999;
-  position: relative;
-}
-
-#sidecontent2 span {
-  display: table;
-  color: #fff;
-  text-align: center;
-  margin: auto;
-  padding: 20px 0;
-  font-size: 25px;
-}
-
-#footer {
-  height: 200px;
-  clear: both;
-  background: #444;
-}
-
-#credits {
-  height: 60px;
-  margin: 0;
-  background: #fff;
-}
-
-#credit span {
-  display: table;
-  color: #999;
-  text-align: center;
-  font-size: 20px;
-  line-height: 60px;
-  margin: auto;
-}
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-#menu.fixed {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-}
-/* Back to top */
-
-.back-to-top {
-  visibility: hidden;
-  background-color: #444;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 48px;
-  position: fixed;
-  bottom: 65px;
-  right: 35px;
-  z-index: 90;
-  cursor: pointer;
-  border-radius: 1px;
-  opacity: 0;
-  -webkit-transform: translateZ(0);
-  transition: all .6s
-}
-
-.back-to-top .fa {
-  font-size: 18px;
-  color: #fff;
-  vertical-align: middle;
-}
-
-.back-to-top:hover {
-  background-color: #fc4f3f;
-  opacity: 1
-}
-
-.back-to-top.show {
-  visibility: visible;
-  bottom: 35px;
-  opacity: 1;
-}
-
-#menu {
-  position: absolute;
-  width: 100%;
-  max-width: 920px;
-  height: 60px;
-  margin: auto;
-  background: #f0f0f0;
-  z-index: 99;
-
-background: #cedbe9; /* Old browsers */
-background: -moz-linear-gradient(left, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#cedbe9), color-stop(17%,#aac5de), color-stop(50%,#6199c7), color-stop(59%,#419ad6), color-stop(71%,#4bb8f0), color-stop(84%,#3a8bc2), color-stop(100%,#26558b)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* IE10+ */
-background: linear-gradient(to right, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 ); /* IE6-9 */
-}
-
-.wrapper {
-    position: relative;
-    padding: 0;
-    width:100px;
-    display:block;
-}
-.text {
-    position: absolute;
-    top: 0;
-    color:#f00;
-    background-color:rgba(255,255,255,0.7);
-    width: 300px;
-    height: 391px;
-    line-height:100px;
-    text-align: center;
-    z-index: 10;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-.text:hover {
-    opacity:1;
-}
-
-img {
-    z-index:1;
-}
-span.text
-{
-  width: 300px;
-  height: 150px;
-  color: #f00;
-  text-align: center;
-  line-height: 391px; /* Magic Trick to align text " vertically " */
-}
-
-.myButtonLink {
-        float: left;
-	display: block;
-	width: 160px;
-	height: 123px;
-	//background: url('Untitled000000.png') bottom;
-	background: url('Untitled990009000009.png') bottom;
-	text-indent: -99999px;
-}
-
-.myButtonLink:hover {
-	background-position: 0 0;
-}
-
-.speech-bubble {
-  position: relative;
-  background-color: #292929;
-  width: 200px;
-  height: 150px;
-  line-height: 150px; /* vertically center */
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  font-family: sans-serif;
-}
-
-.speech-bubble:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 15px solid;
-}
- 
-.speech-bubble-top:after {
-  border-bottom-color: #292929;
-  left: 50%;
-  bottom: 100%;
-  margin-left: -15px;   
-}
-.speech-bubble-right:after {
-  border-left-color: #292929;
-  left: 100%;
-  top: 50%;
-  margin-top: -15px;    
-}
- 
-.speech-bubble-bottom:after {
-  border-top-color: #292929;
-  top: 100%;
-  left: 50%;
-  margin-left: -15px;   
-}
- 
-.speech-bubble-left:after {
-  border-right-color: #292929;
-  top: 50%;
-  right: 100%;
-  margin-top: -15px;    
+  background-color: #f5f5f5;
 }
 
 
+        </style>
+        </head>
+        <body class="text-shadows">
 
 
-</style>
+        <nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Home</a></li>
+				<li><a href="#about">Design Service</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#code">Web & App Hosting</a></li>	
+				<li><a href="#contact">Industries Served</a></li>	
+
+			</ul>
+		</div>
+	</div>
+        </nav>
 
 
-</head>
-<body ng-app="formExample">
-<div id="eagleflow">
-  <div id="header">
-   
-<div align=left><?php echo date("F j, Y"); ?></div>
+
+        <section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+
+				<h1 class="title">ふくすけ</h1>
+				<h2 class="subtitle">Biomassives Group</h2>
+
+				<h3 class="tagline">
+					Website and Mobile<BR>App Production<BR>& Maintenance Service<BR>303.720.6790
+                             ops@biomassiv.es
+				<!-- 	<a href="#">Web Coding</a><BR>App Design<BR>Workflow Training</a> -->
+                                </h3>
+
+                               <p class="orange">
+                             </p> 
+
+       <BR><BR>
+
+                                <a href="mailto:ops@biomassiv.es"><i class="fa fa-email fa-fw orange"></i> ops@biomassiv.es</a>
+
+</p>            
+			
+			</div> 
+		</div> 
+	
+	</div>
+        </section>
 
 
-<div id="boxbase2">
+        <section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">Design Service</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<div style="text-align:center;font-size:75px;"><BR><BR><BR><BR>設<BR><BR><BR><BR>計<BR><BR><BR><hr><bR><BR>計<BR><BR><bR><BR>画</div></div>
+			<div class="col-sm-4">   
+				<p class=thumbnail>Successful web projects are invariably the product of deep research.  We rely heavily on free and public domain software. The giants of software have widely adopted new tools that greatly benefit developer productivity. Meteor, Git, NGINX, AngularJs, Bootstrap, Packer, Jasemine and Jenkins specific.  Meteor, Jekyll, Drupal, and Wordpress have proven to be the most adaptive tools for managing the complex needs of our clients and Biomassives continues to maintain sites with these tools today.
+<br><BR>
+We are always careful to protect intellectual property and to help map out the best strategy to help build your community while retaining value for your company.
 
-<a class="myButtonLink" href="#LinkURL">eaglebird placeholder</a>
 
-<div ng-controller="ExampleController">
+unless otherwise expressly shared.</p>    
+				   
+				<p><a href="https://www.facebook.com/biomassives">Biomassives Facebook</a></p> / <a href="https://twitter.com/biomassives">Biomassives Twitter</a> / 
+			</div>
+		</div>
+	</div>
+</section>
 
 
-    <h1>eagle<b style="color:#0e8744">money</b>flow</h1>
-<form name="form" class="css-form" novalidate>
-    <p>Send $<input type="text" ng-model="user.amt" size=5 name="uAmt" required="" /> to <input type="radio" ng-model="user.currency" value="Ghana" />Ghana, <input type="radio" ng-model="user.currency" value="Nigeria" />Nigeria, or <input type="radio" ng-model="user.currency" value="Kenya" />Kenya</p>
-<table><tr><td  valign=top>
-    
+<section class="section" id="portfolio">
+	<div class="container">
+	
+		<h2 class="text-center title">Portfolio</h2>
+		<!--<p class="lead text-center">
+			<BR><BR> 
+                        We reserve the right to refuse certain types of work requests, specifically those that would cause harm to a person or ecosystem. 
+
+
+<BR><BR>
+
+
+		</p> -->
+		<div class="row">
+			
+			</div>
+			
+<div class="col-sm-offset-2 col-sm-4 col-md-6">
+				<div class="thumbnail">
+					<a href=http://vooimmigrant.org><img src="assets/screenshots/assets_biomassives_vooimmigrant.org.png" alt="Voices of the Oppressed Human Rights Project" border=0></a>
+
+					<div class="caption">
+						<h3>Voices of the Oppressed</h3>
+						<p>Technologies Used: Mobile First UI, Ionic, Twitter API, Php, Lumen Framework, MYSQL, NewRelic, Sendgrid, CloudFlare</p>
+
+					</div>
+				</div>
+</div>
+
+
+<div class="col-sm-offset-2 col-sm-4 col-md-6">
+				<div class="thumbnail">
+					<a href=http://rosebudandmoon.com><img src="assets/screenshots/assets_biomassives_rosebudandmoon.com.gif" alt="Web Design for Artists and Illustrators" border=0></a>
+
+					<div class="caption">
+						<h3>Rosebud and Moon</h3>
+						<p>Technologies Used: Responsive UI, AnimateCSS, MeteorJs, Mailchimp</p>
+
+					</div>
+				</div>
+</div>
+
+			<div class="col-sm-offset-2 col-sm-4 col-md-6">
+				<div class="thumbnail">
+					<a href=http://nedthairestaurant.com><img src="assets/screenshots/assets_biomassives_nedthairestant.com.gif"  alt="Web Design for Restaurants" border=0></a>
+				           <div class="caption">
+						<h3>Ubon Thai Cuisine</h3>
+						<p>Technologies Used: CSS3, Jquery Carousel, Web Promotion</p>
+
+					</div>
+				</div>
+			</div>
+
+<div class="col-sm-offset-2 col-sm-4 col-md-6">
+				<div class="thumbnail">
+					<img src="assets/screenshots/assets_biomassives_mbanzaband.com.gif" alt="Web Design for Musicians">
+					<div class="caption">
+					        <h3>Mbanza Band</h3>
+						<p>  Technologies Used: Youtube Video Background Animation, Soundcloud, Mailchimp, Bandsintown Integration
+
 <!--
-    Sender Name:
-    <input type="text" ng-model="user.name" name="uName" required="" />
-    <br />
-    <div ng-show="form.$submitted || form.uName.$touched">
-      <div ng-show="form.uName.$error.required">Tell us your name.</div>
-    </div>
+<P>
+Current Biomassives' build system enables Jenkins Architecture for Continuous Deployment.  Bower is used to ensure that packages are current and security risks minimized.  Gulp is used to run Bower and other deployment tasks so that you can build as many test versions of your app as there may be features to consider.  Since Google Search now heavily weights sites with mobile device compatibility, keeping current is more important than ever for web services.</p>
+						-->
 
-     E-mail:
-    <input type="email" ng-model="user.email" name="uEmail" required="" />
-    <br />
-    <div ng-show="form.$submitted || form.uEmail.$touched">
-      <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
-      <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
-    </div>
+					</div>
+				</div>
+	</div>
 
- </div>
-</td><td>
-    Recipient Name:
-    <input type="text" ng-model="user.rname" name="urName" required="" />
-    <br />
-    <div ng-show="form.$submitted || form.urName.$touched">
-      <div ng-show="form.urName.$error.required">Name of Recipient.</div>
-    </div>
-     Phone:
-    <input type="text" ng-model="user.rphone" name="urPhone" required="" />
-    <br />
-    <div ng-show="form.$submitted || form.urPhone.$touched">
-      <span ng-show="form.urPhone.$error.required">Please share recipient phone.</span>
-      <span ng-show="form.urPhone.$error.phone">This is not a valid number.</span>
-    </div>
+			
+             <div class="col-sm-offset-2 col-sm-4 col-md-6">
+				<div class="thumbnail">
+					<a href="http://reintreestables.drupalgardens.com"><img src="assets/screenshots/assets_biomassives_reintreestables.com.png" alt="Equestrian Premier Hunter/Jumper Barn" border=0></a>
+					<div class="caption">
+						<h3>ReinTree Stables</h3>
+						<p>Technologies Used: Drupal, CSS3, Drupal Theme Development</p>
+						
+					</div>
+				</div>
+			</div>
 
-  <pre>user = {{user | json}}</pre>
-  <pre>master = {{master | json}}</pre>
--->
-</td><td valign=top>
-    
-    <br />
-    <input type="checkbox" ng-model="user.agree" name="userAgree" required="" />
 
-    I agree:
-    <input ng-show="user.agree" type="text" ng-model="user.agreeSign" required="" />
-    <br />
-    <div ng-show="form.$submitted || form.userAgree.$touched">
-      <div ng-show="!user.agree || !user.agreeSign">Please agree and sign.</div>
-    </div>
+			<div class="col-sm-offset-2 col-sm-4 col-md-6">
+				<div class="thumbnail">
+					<a href="http://ecocity.com"><img src="assets/screenshots/assets_biomassives_ecocity.com.png" alt="non profit educational organization web design" border=0></a>
+					 <div class="caption">
+						<h3>Ecocity Lifelong Learning Network</h3>
+						<p>Technologies Used: Copywriting, Research, Triangulate js, Mobile First Design Pattern</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <input type="button" ng-click="reset(form)" value="Reset" />
-    <input type="submit" ng-click="update(user)" value="Save" />
-</td></tr></table>
-
-  </form>
-</div>
+	</div>
+</section>
 
 
 
-</div>
-  <div id="menuwrap">
-    <div id="menu"><span>Secure service, we don't store your personal data</span></div>
-  </div>
-  <div id="content">
-    <div id="main">
-    
+<section class="section" id="code">
+	<div class="container">
+	
+		<h2 class="text-center title">APP Production >> API/UI Maintenance</h2>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<div class="lead"> Biomassives provides you with tools for managing and delegating responsibility within your team.   2015 best practices lower costs while enabling rapid growth. Biomassives client login system is a central point where documentation, test coverage, and repositories, resources can be referenced.
+
+<!  history on your live deployment, and tests on features you are considering, and performance reporting, so you can --> 
+
+focus on your content and customers.</div>
+
+<div class="lead"> Estimates are based on a rate of $60/hr, $35/hr for non profit organizations.  Costs are zero to very minimal for low usage, but architected to allow for high availability and responsiveness during events and other peak usage moments.
 
 
-
-      <div id="box"> <span class="text"></span></div>
-  <div id="box"><a href="#" class="wrapper"> Send money fast
-    <span class="text">
-        Read More!
-    </span>
- 
-</a></div>
-      <div id="box">
-<! Save money with the Best rates available.></div>
-
-<p><! pk_live_ILZFGYvcrsryiO2v4SZ16rjZ >
-<form action="https://emf1.herokuapp.com/" method="POST">
-    <script
-        src="https://checkout.stripe.com/checkout.js"
-        class="stripe-button"
-        data-key="pk_test_LGbGlLT26cMmfkAjE1g36gVr"
-        data-name="Eagle Money Flow"
-        data-description="Kickoff Payment"
-        data-amount="10000"
-    ></script>
-    <input name="amount" value="10000" type="hidden">
-    <input name="description" value="Kickoff Payment" type="hidden">
-    <input name="metadata" value="{ product_id: 'sku_004' }" type="hidden">
-</form>
+Applicable cloud services are described here: <a href="http://mongolabs.io">MongoLabs</a>, <a href="http://firebase.io">Firebase</a>, <a href="http://aws.amazon.com/free/">AWS Free Tier</a>, <a href="http://www.dropboxwiki.com/tips-and-tricks/host-websites-with-dropbox">Dropbox</A>, and <a href="https://www.heroku.com/pricing">Heroku</a>.</div>
+                                
+				<!-- Gold standard: unit and end to end tests, Angular 2 Web components. Assisting clients with angular 1.4x feature rewrites for transitioning apps to Anglar 2.0 based management. -->
 </p>
+				<p><b>ops@biomassiv.es</b><br><br></p>
+				
+			</div>
+		</div>
 
-      <div id="box"><! Secure service, we don't store your numbers></div>
-      <div id="box"><! Friendly, courteous 24 hr transaction assistance></div>
-      <div id="box"><! Today we can move faster, share more, be more connected.></div>
-      <div id="box"></div>
-      <div id="box"></div>
-      <div id="box"></div>
-      <div id="box"></div>
-      <div id="box"></div>
+	</div>
+</section>
+
+
+<! http://www.codeforamerica.org/governments/data-standards-faq/  >
+
+
+
+<section class="section" id="contact">
+	<div class="container">
+	
+		
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<h1 class="text-center title">産業</h1>
+                                <p> 
+   <ul class="lead">
+      <ol> <h3>Biomassives is ready to<BR>launch and update your website and apps<BR>while helping to improve your internal process.</h3><BR>
+           <b>We have experience working with:</b></ol>
+
+
+      <ol> Startups</ol>
+      <ol> Natural Products</ol>
+      <ol> Academic Institutions</ol>
+      <ol> Public Data Transparency <a href=http://www.codeforamerica.org/governments/data-standards-faq/ target=_blank>*</a></ol>
+      <ol> Non Profit ( 501c3 ) Organizations</ol>
+      <ol> Sustainable Development Initiatives</ol>
+      <ol> Community and Professional Organizations</ol>
+      <ol> Video & Data Product Portals</ol>
+      <ol> All Traditional & Inspirational Music</ol>
+   </ul>
+  
+ </p>
+				<ul class="list-inline list-social socialI" style="color:#fff;">
+					<li><a href="https://twitter.com/biomassives" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+					<li><a href="https://github.com/biomassives" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+					<li><a href="http://codepen.io/biomassives" class="btn btn-link"> CodePen</a></li>
+                                 	<li><a href="https://www.facebook.com/biomassives" class="btn btn-link"><i class="fa fa-facebook fa-fw"></i> facebook</a></li>
+                                        <li><a href="http://jsfiddle.net/user/biomassives/fiddles/" class="btn btn-link"><i class="fa fa-appnet fa-fw"></i> app.net</a></li>
+                                       
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+  <div id="footer" style="position:absolute !important; left: 10px; bottom: 15px;">
+      <div class="container">
+        <p class="muted credit">&copy; Biomassives Group Ltd.</p>
+      </div>
     </div>
-    <div id="side">
-      <div id="sidecontent2a" class="cf" style="margin:5px;align:center;">
-<div class="speech-bubble speech-bubble-bottom"><span><i class="fa fa-quote-left fa-1x fa-pull-left" ng-controller="ExampleController" style="margin:5px;"> <?php echo $usd_cedi." Cedi/$"; ?></i> <i class="fa fa-quote-right fa-1x fa-pull-left" ng-controller="ExampleController" style="margin:5px;"></i></span></div></div>
-      <div id="sidecontent2" class="cf"><span>Reliable & Timely</span></div>
-      <div id="sidecontent2a" class="cf" style="margin:5px;"><div class="speech-bubble speech-bubble-left">
-<b>
-Life is good!
-<BR>~<BR>
-Leo Nzuri
-</b>
 
-</div></div>
-      <div id="sidecontent2" class="cf"><span>Best Rates</span></div>
-      <div id="sidecontent2" class="cf"><span>Secure and Trusted</span></div>
-      <div id="sidecontent2" class="cf"><span>No Fees</span></div>
-    </div>
-  </div>
-  <div id="footer" class="cf"></div>
-  <div id="credits"><span>&copy 2015 Biomassives Ltd. and Knel ent.</span></div>
-</div>
-
-<div class='back-to-top' id='back-to-top' title='Back to top'><i class='fa fa-chevron-up' /></div>
-
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
-  <script>(function(angular) {
-  'use strict';
-angular.module('formExample', [])
-  .controller('ExampleController', ['$scope', function($scope) {
-    $scope.master = {};
-
-    $scope.update = function(user) {
-      $scope.master = angular.copy(user);
-    };
-
-    $scope.reset = function(form) {
-      if (form) {
-        form.$setPristine();
-        form.$setUntouched();
-      }
-      $scope.user = angular.copy($scope.master);
-    };
-
-    $scope.reset();
-  }]);
-})(window.angular);</script>
-
-
-<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script>
-$(function() {
-  var top = $('#menu').offset().top - parseFloat($('#menu').css('marginTop').replace(/auto/, 0));
-  var footTop = $('#footer').offset().top - parseFloat($('#footer').css('marginTop').replace(/auto/, 0));
-
-  var maxY = footTop - $('#menu').outerHeight();
-
-  $(window).scroll(function(evt) {
-    var y = $(this).scrollTop();
-    if (y > top) {
-      if (y < maxY) {
-        $('#menu').addClass('fixed').removeAttr('style');
-      } else {
-        $('#menu').removeClass('fixed').css({
-          position: 'absolute',
-          top: (maxY - top) + 'px'
-        });
-      }
-    } else {
-      $('#menu').removeClass('fixed');
-    }
-  });
-});
-
-// Back to top button
-(function() {
-  $(document).ready(function() {
-    return $(window).scroll(function() {
-      return $(window).scrollTop() > 200 ? $("#back-to-top").addClass("show") : $("#back-to-top").removeClass("show")
-    }), $("#back-to-top").click(function() {
-      return $("html,body").animate({
-        scrollTop: "0"
-      })
-    })
-  })
-}).call(this);
-
-</script>
-
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="/themes/becobot/assets/js/modernizr.custom.72241.js"></script>
+<script src="/themes/becobot/assets/js/becobot.js"></script>
+<!script src="/themes/becobot/assets/js/owl.carousel.js"></script>
 </body>
 </html>
